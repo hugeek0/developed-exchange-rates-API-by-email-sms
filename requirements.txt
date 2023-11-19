@@ -4,6 +4,7 @@ charset-normalizer==3.3.2
 Django==4.2.6
 idna==3.4
 kavenegar==1.1.2
+Khayyam==3.0.17
 requests==2.31.0
 sqlparse==0.4.4
 typing_extensions==4.8.0

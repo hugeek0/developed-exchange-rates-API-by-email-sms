@@ -3,6 +3,8 @@ import requests
 import json
 from mail import send_smtp_email
 from notification import send_sms
+from datetime import datetime
+from khayyam import JalaliDatetime
 
 
 def get_rates():
@@ -43,6 +45,8 @@ def check_notification(rates):
 
 
 def send_notification(msg):
+    now = JalaliDatetime(datetime.now()).strftime('%y-%B-%d  %A  %H:%M')
+    msg += now
     send_sms(msg)
 
 
